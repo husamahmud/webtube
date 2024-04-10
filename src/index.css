@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+* {
+	scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+	@apply bg-transparent w-2;
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-secondary-dark rounded-full;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+	@apply bg-transparent;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+	@apply bg-secondary-border;
+}
